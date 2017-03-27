@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:util="http://www.springframework.org/schema/util" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		 http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd">
+
+<util:set id="setA" set-class="java.util.TreeSet">
+	<value>abc</value>
+    <value>def</value>
+    <value>abc</value>
+    <value>hgj</value>
+	</util:set>
+
+<util:map id="mapA" map-class="java.util.HashMap">
+    <entry key="k1" value="v1"/>
+    <entry key="k2" value="v2"/>
+    <entry key="k3" value="v3"/>
+</util:map>
+
+<util:list id="listA" list-class="java.util.ArrayList">
+<value>123</value>
+<value>321</value>
+<value>432</value>
+</util:list>
+
+<bean id="resrtaurantBean" class="com.mySpring.Restuarant">
+    <property name="map_Waiters_List" ref="mapA"/>
+     <property name="set_Waiters_List" ref="setA"/>
+      <property name="list_Waiters_List" ref="listA"/>
+</bean>
+
+<bean id="customerBean" class="com.mySpring.Customer"/>
+<bean class="org.springframework.context.annotation.commonAnnotationbeanpostprocessor"/>
+
+</beans>
