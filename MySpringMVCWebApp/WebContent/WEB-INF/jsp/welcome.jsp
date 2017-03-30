@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Welcome</title>
 </head>
 <body>
 ${welcomeMessage}
+<a href="Login">Login Here</a>
 </body>
 </html>

@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Index</title>
 </head>
 <body>
-<a href="welcome">Click Here</a>
+<!-- Welcome message -->
+<a href="master/welcome">Click Here</a>
+<br>
+<br>
+<!-- @PathVariable example -->
+<a href="master/studDetails/karthik/CSC">Click Here To Go Student Details</a>
 </body>
 </html>
